@@ -17,6 +17,7 @@ public:
         {
             n= nums[i];
         }
+        count=0;
      }   
      return n;
     }
