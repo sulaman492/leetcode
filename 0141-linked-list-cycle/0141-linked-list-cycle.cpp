@@ -14,7 +14,7 @@ public:
         while(fast!=nullptr && fast->next!=nullptr){
             slow=slow->next;
             fast=fast->next->next;
-            if(slow==fast){
+            if(fast!=nullptr && fast->next==slow){
                 return true;
             }
         }
