@@ -13,12 +13,12 @@ public:
         int right = arr.size() - 1;
 
         while (left < right) {
-            int sum = arr[left].first + arr[right].first;
+            int total = arr[left].first + arr[right].first;
 
-            if (sum == target) {
+            if (total == target) {
                 return {arr[left].second, arr[right].second};
             }
-            else if (sum < target) {
+            else if (total < target) {
                 left++;
             }
             else {
